@@ -4,6 +4,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
+    <script src="script.js"></script>
     <div id="menu">
       <ul>
         <li><a href="#about">About Me</a></li>
@@ -80,86 +81,67 @@
     </section>
 
     <section id="like" class="section">
-      <h1>👍 GIVE ME A LIKE</h1>
-      <iframe
-        src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBreakingBad&width=450&layout&action&size&share=true&height=35&appId"
-        width="450"
-        height="35"
-        style="border: none; overflow: hidden"
-        scrolling="no"
-        frameborder="0"
-        allowfullscreen="true"
-        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-      ></iframe>
+      <h1 class="section-title">👍LIKE</h1>
+      <section id="like-section">
+        <h2 class="section-title">Show Me Some Love ❤️</h2>
+        <div class="like-box">
+          <button class="like-button" id="likeButton">
+            ❤️ <span id="likeCount">0</span> Likes
+          </button>
+        </div>
+        <iframe
+          src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FBreakingBad&width=450&layout&action&size&share=false&height=35&appId"
+          width="300"
+          height="35"
+          style="border: none; overflow: hidden"
+          scrolling="no"
+          frameborder="0"
+          allowfullscreen="true"
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+        ></iframe>
+      </section>
     </section>
 
     <section id="qrcoder" class="section">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      scan my code
-      <br />
-      <br />
-      <br />
+      <h1>🤳 SCAN MY CODE</h1>
+      <div class="qrcode-container">
+        <img src="images/frame.png" />
+      </div>
     </section>
 
     <section id="spa" class="section">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      ans
+      <h1>Q&A</h1>
       <br />
       <br />
       <br />
     </section>
 
     <section id="contact" class="section">
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      contact me
-      <br />
-      <br />
-      <br />
+      <h1>📧 CONTACT ME</h1>
+      <form class="contact-form">
+        <label for="email">Your Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="message">Your Message:</label><br />
+        <div class="emoji-picker">
+          <span class="emoji">😊</span>
+          <span class="emoji">👍</span>
+          <span class="emoji">🔥</span>
+          <span class="emoji">❤️</span>
+          <span class="emoji">🤯</span>
+          <span class="emoji">💡</span>
+        </div>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Write your message here... 😊👍🔥"
+          required
+        ></textarea
+        ><br /><br />
+
+        <button type="submit">Send</button>
+      </form>
     </section>
 
     <script type="text/javascript">

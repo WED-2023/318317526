@@ -41,7 +41,7 @@
 #about {
   font-size: large;
   font-family: Verdana, sans-serif;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 #about h1 {
@@ -111,6 +111,130 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background: linear-gradient(to right, #00cc96, rgb(0, 106, 78));
+  padding: 60px 20px;
+  color: whitesmoke;
+}
+
+.like-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.like-button {
+  background-color: white;
+  color: #e63946;
+  border: none;
+  border-radius: 50px;
+  font-size: 24px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.like-button:hover {
+  transform: scale(1.1);
+}
+
+.like-button.clicked {
+  animation: pop 0.3s ease;
+}
+
+#qrcoder {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.qrcode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: fit-content;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.qrcode-container img {
+  width: 250px;
+  height: auto;
+}
+
+#spa {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   color: whitesmoke;
   background: rgb(0, 106, 78);
+}
+#contact {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: Verdana, sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.contact-form textarea::placeholder {
+  font-size: 14px;
+}
+
+.contact-form button {
+  background-color: #008060;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #00cc88;
+}
+.emoji-picker {
+  margin-bottom: 10px;
+}
+
+.emoji {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.emoji:hover {
+  transform: scale(1.3);
 }
