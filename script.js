@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   likeBtn.addEventListener("click", () => {
     count++;
     likeCount.textContent = count;
+
+    likeBtn.classList.remove("clicked");
+    void likeBtn.offsetWidth;
     likeBtn.classList.add("clicked");
   });
 });
