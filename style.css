@@ -1,7 +1,116 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgb(0, 106, 78);
+  font-size: 25px;
+  font-family: Verdana, sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgb(255, 255, 255);
+  z-index: 500;
+}
+#menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu li {
+  margin: 0px 20px;
+}
+
+#menu li a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+#menu li a:hover {
+  background-color: #00cc96;
+  color: black;
+}
+#about {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  margin-top: 20px;
+}
+
+#about h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  text-align: center;
+  margin-bottom: 0%;
+}
+#about p {
+  font-size: 20px;
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+#photos {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  background: rgb(0, 106, 78);
+}
+#photos h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 0%;
+}
+
+.photo-gallery {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.photo-gallery img {
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+  height: auto;
+}
+
+#playlist {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#like {
+  font-size: large;
+  font-family: Verdana, sans-serif;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+  background: rgb(0, 106, 78);
 }
